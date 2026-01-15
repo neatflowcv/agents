@@ -17,4 +17,5 @@ def create_agent():
     return create_react_agent(
         model=llm,
         tools=[search_tool],
+        debug=True
     )
