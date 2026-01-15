@@ -25,6 +25,27 @@ LangChain/LangGraph 기반 에이전트 애플리케이션으로, Streamlit 웹 
 
 - `__init__.py` 파일을 사용하지 않음. 명시적 import 경로 사용 (예: `from tools.search import search_tool`)
 
+## Commit Convention
+
+Conventional Commits 스타일, 영어로 작성:
+
+```
+<type>: <subject>
+```
+
+**Types:**
+- `feat`: 새로운 기능
+- `fix`: 버그 수정
+- `refactor`: 리팩토링
+- `docs`: 문서 변경
+- `style`: 코드 포맷팅
+- `test`: 테스트 추가/수정
+
+**Examples:**
+- `feat: add datetime tool`
+- `fix: handle empty search results`
+- `refactor: migrate from Gradio to Streamlit`
+
 ## Configuration
 
 환경변수로 설정 가능:
