@@ -9,14 +9,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 uv sync
 
 # Run the application
-uv run main.py
+uv run streamlit run main.py
 ```
 
 ## Architecture
 
-LangChain/LangGraph 기반 에이전트 애플리케이션으로, Gradio 웹 인터페이스를 통해 사용자와 상호작용합니다.
+LangChain/LangGraph 기반 에이전트 애플리케이션으로, Streamlit 웹 인터페이스를 통해 사용자와 상호작용합니다.
 
-- `main.py` - 진입점, Gradio ChatInterface 실행
+- `main.py` - 진입점, Streamlit Chat UI 실행
 - `agent.py` - LangGraph의 `create_react_agent`로 에이전트 생성
 - `config.py` - 환경변수 기반 설정 (dataclass)
 - `tools/search.py` - Whoogle 검색 도구
