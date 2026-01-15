@@ -2,6 +2,7 @@ from langchain_openai import ChatOpenAI
 from langgraph.prebuilt import create_react_agent
 
 from config import Config
+from tools.datetime_tool import datetime_tool
 from tools.search import search_tool
 
 
@@ -16,6 +17,6 @@ def create_agent():
 
     return create_react_agent(
         model=llm,
-        tools=[search_tool],
+        tools=[search_tool, datetime_tool],
         debug=True
     )
